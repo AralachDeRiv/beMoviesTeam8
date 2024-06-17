@@ -121,6 +121,7 @@ const getLatestReleases = async () => {
       const JSONresponse = await response.json();
       return JSONresponse.results;
     }
+    console.log("Network error");
   } catch (err) {
     console.log(err.message);
   }
