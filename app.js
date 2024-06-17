@@ -125,7 +125,3 @@ const getLatestReleases = async () => {
     console.log(err.message);
   }
 };
-
-getLatestReleases()
-  .then((x) => getOverview(x[0]))
-  .then((x) => console.log(x));
